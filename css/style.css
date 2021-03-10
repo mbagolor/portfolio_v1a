@@ -636,6 +636,286 @@ body.demo::before {
     }
 
 
+
+
+/* CODE FROM AI */
+
+/* Main Sections */
+section {
+    padding: 1.5em 0;
+  }
+  
+  /* FORMS */
+  form {
+    margin: 1.75em 0;
+  }
+  
+  form label {
+    display: block;
+  }
+  
+  form input,
+  form textarea {
+    font-family: "mr-eaves-xl-modern", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.15em;
+    display: block;
+    margin-bottom: 1.25em;
+    width: 100%;
+    color: #666;
+    padding: 0.25em;
+    border: 1px solid #ccc;
+  }
+  
+  form textarea {
+    border: 1px solid #ccc;
+    min-height: 6em;
+  }
+  
+  form input[type="button"],
+  form input[type="submit"],
+  form input[type="reset"] {
+    width: auto;
+    background-color: #39c;
+    border: 1px solid #39c;
+    color: #fff;
+    padding: 0.75em 1em;
+    -webkit-border-radius: 0.32em;
+    -moz-border-radius: 0.32em;
+    border-radius: 0.32em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  form input[type="button"]:hover,
+  form input[type="submit"]:hover,
+  form input[type="reset"]:hover {
+    background-color: #069;
+    border-color: #069;
+  }
+  
+  /* Page Fade-ins */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  main,
+  fade-in {
+    opacity: 0;
+    animation: fade-in ease-in-out 1;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+  }
+  
+  @keyframes fade-and-move-in {
+    from {
+      transform: translate(0, -20px);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+  
+  .fade-and-move-in {
+    opacity: 0;
+    animation: fade-and-move-in ease-out 1;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+  }
+  
+  .fade-and-move-in:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .fade-and-move-in:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .fade-and-move-in:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  .fade-and-move-in:nth-child(4) {
+    animation-delay: 0.7s;
+  }
+  .fade-and-move-in:nth-child(5) {
+    animation-delay: 1s;
+  }
+  
+  /* #SITE SPECIFIC CUSTOM CSS (e.g. Base Overrides)
+  --------------------------------- */
+  
+  body {
+    font-family: "mr-eaves-xl-modern", Helvetica, Arial, sans-serif;
+    background: #fff;
+  }
+  
+  .site-navigation {
+    font-family: "mr-eaves-xl-modern", Helvetica, Arial, sans-serif;
+  }
+  
+  /* Custom Sections */
+  #work {
+    padding-bottom: 4em;
+  }
+  
+  .hero {
+    /* background: #dedede; */
+    text-align: center;
+    padding: 4em 0;
+  }
+  
+   .text-centered p{
+      text-align: left;
+      max-width: 26em;
+      margin-left: auto;
+      margin-right: auto;
+    }  
+  
+  /*  #LAYOUT: THUMB IMAGE GRID */
+  .thumbgrid {
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center;
+      margin: 0;
+  }
+  
+  .thumbgrid li {
+      list-style: none;
+      width: 50%;
+      margin: 0;
+      padding: 0;
+      /* padding-bottom: 0.4%; */
+      
+  }
+  
+  @media (min-width: 768px) {
+      .thumbgrid li {
+          width: 33.3333%;
+      }
+  }
+  
+  .thumbgrid a {
+    display: block;
+  }
+  
+  .thumbgrid a img {
+      filter: brightness(1.05);
+      transition: all ease-in-out 0.2s;
+      display: block;
+      
+  
+  }
+  
+  .thumbgrid a:hover img {
+      filter: brightness(1);
+      
+  
+  }
+  
+  .icon-char {
+    font-size: 2em;
+    font-weight: 200;
+    display: block;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    color: #dedede;
+  }
+  
+  /* Custom MixItUp Styling */
+  .mixcontainer {
+    /* text-align: center; */
+  }
+  
+  .mixcontrols {
+    margin-bottom: 2em;
+    
+  }
+  
+  .book, .brochure, .brochure .row, .citylogo {
+    padding-top: 3em;
+  }
+  
+  .pictogram row {
+    margin-top: 4em;
+  }
+  /* gradient text */
+  .gradient h1 {
+    line-height: 175px;
+    font-size: 125px;
+    font-family: "mr-eaves-xl-modern";
+    display: inline-block;
+    background-image: linear-gradient(to bottom, purple, pink);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  /* Hover Caps */
+  .hovercaps a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hovercaps img {
+    display: block;
+  }
+  
+  .hovercaps .caption {
+    /* border: 1px solid red;  */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    display: grid;
+    place-items: center;
+    transition: all .4s cubic-bezier(1,0,1,1);
+    transform: translateY(-100%); 
+    font-family: "mr-eaves-xl-modern"
+  }
+  
+  .hovercaps .caption.blue{
+    background-color: #039;
+    transform: translateX(-100%); 
+  }
+  
+  .hovercaps .caption.purple{
+    background-color: rgb(141, 12, 226);
+    transform: translateX(-100%); 
+  }
+  
+  .hovercaps .caption.turquoize{
+    background-color: rgb(16, 86, 236);
+    transform: translateX(-100%); 
+  }
+  
+  
+  
+  .hovercaps a:hover .caption {
+   transform: translateY(0);
+   
+  }
+  
+  .hovercaps h3 {
+    margin: 0;  
+  }
+  
+  
+  
+
+
 /* FOR DEV TESTING ONLY */
 
 /* * {
