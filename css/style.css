@@ -306,11 +306,20 @@ svg{
     font-weight: 300;
 }
 
-.site-id a {
+/* .site-id a {
     display: inline-block;
     padding: .25em 0;
     font-weight: 700;
-}
+} */
+
+.site-id svg {
+    margin-right: 0.5em;
+    fill: white;
+    display: flex ;
+    align-items: none;
+    
+  }
+
 
 /* SITE NAV (Primary Top Nav) */
 /* SITE NAV */
@@ -367,8 +376,18 @@ svg{
     transform: scale(0.5);
   }
 
+/* NAVICON */
+.menu-button svg {
+    fill: rgb(163, 35, 35);
+    cursor: pointer;
+    position: relative;
+    z-index: 20;
+  }
+
 /* MENU BUTTON */
-.menu-button {
+
+
+/* .menu-button {
     position: absolute;
     left: -9999px;
     padding: .5em;
@@ -379,7 +398,7 @@ svg{
 .menu-button::selection {
     color: none;
     background: none;
-}
+} */
 
 
 /* TOGGLE-NAV */
@@ -484,10 +503,15 @@ section.hero {
     /* padding: 6em 1em; */
     display: block;
 }
-
-.hero h2 {
+.hero h1{
+    color: white;
     font-size: 3em;
     line-height: 1;
+}
+.hero h2 {
+    color: white;
+    font-size: 2.25em;
+    line-height: 1.1;
 }
 
 .hero p {
