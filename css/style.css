@@ -238,7 +238,7 @@ body {
     width: 100%;
     top: 0;
     z-index: 100;
-    background-color: rgb(0, 0, 0);
+    background-color: white;
 }
 
 .site-header h1{
@@ -254,7 +254,7 @@ body {
 
 .site-header a,
 .site-footer a {
-    color: teal;
+    color: rgb(207, 35, 87);
     /* color: rgba(0,0,0,.8);
      */
     text-decoration: none;
@@ -275,7 +275,8 @@ svg{
     transform: translate(-50%, -50%);
   }
   path{
-    stroke:#fff;/* color of the signature */
+    fill: white;
+    stroke:black;/* color of the signature */
     stroke-width:4px;/* need to be more than 0 otherwise you can't see it */
     animation: demodraw 2s linear infinite ; /* name of the keyframe, duration, easing function ( slow start fast ending ), repeat infinietly */
     stroke-dasharray: 1800;/* value returned by var path = document.querySelector('path');
@@ -326,7 +327,7 @@ svg{
 .site-nav .primary-nav {
     position: fixed;
     z-index: 10;
-    background:rgb(221, 57, 57);
+    background:rgb(250, 246, 247);
     margin: 0;
     padding: 0;
     top: 0;
@@ -378,7 +379,7 @@ svg{
 
 /* NAVICON */
 .menu-button svg {
-    fill: rgb(163, 35, 35);
+    fill: rgb(207, 35, 87);
     cursor: pointer;
     position: relative;
     z-index: 20;
@@ -491,7 +492,7 @@ section {
 }
 
 section.hero {
-    background-color: black;
+    background-color:white;
     padding: 15em 0;
     display: block;
     overflow: hidden;
@@ -504,12 +505,12 @@ section.hero {
     display: block;
 }
 .hero h1{
-    color: white;
+    color:black;
     font-size: 3em;
     line-height: 1;
 }
 .hero h2 {
-    color: white;
+    color: black;
     font-size: 2.25em;
     line-height: 1.1;
 }
@@ -519,7 +520,7 @@ section.hero {
     margin-right: auto;
 }
 #about {
-    background: #ccc;
+    background: black;
 }
 article {
     padding: 4em 0;
@@ -750,7 +751,7 @@ fade-in {
 
 body {
   font-family: "mr-eaves-xl-modern", Helvetica, Arial, sans-serif;
-  background: rgb(0, 0, 0);
+  background: white;
 }
 
 .site-navigation {
@@ -849,7 +850,7 @@ body {
   font-size: 125px;
   font-family: "mr-eaves-xl-modern";
   display: inline-block;
-  background-image: linear-gradient(to bottom, purple, pink);
+  background-image: linear-gradient(to bottom,rgb(207, 35, 87),white);
   color: transparent;
   -webkit-background-clip: text;
   text-align: center;
