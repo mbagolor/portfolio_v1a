@@ -511,7 +511,7 @@ section {
 
 section.hero {
     background-color:white;
-    /* padding: 15em 0; */
+    padding: 15em 0;
     display: block;
     overflow: hidden;
 }
